@@ -1,0 +1,181 @@
+/*IMPORTAR TIPO DE LETRA*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
+/* PARAMETROS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY TIPO DE LETRA*/
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*CONTENEDOR Ancho, Alto, Color de fondo*/
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: #203d89;
+    color: #FFFF;
+}
+
+/*--------------------------  menuPrincipal (Logo + menu )   --------------------------*/
+
+.menuPrincipal{
+    display: flex;
+    justify-content:space-between;
+    padding: 2em;
+}
+
+
+/*MENU*/
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    border-bottom: 3px solid #4686d0;
+    transition: ease-in 2; /*VER!!!!!!*/
+}
+
+/*Logo*/
+.logo{
+    color: #4686d0;
+}
+.logo span{
+    color: #FFFF;
+}
+
+/*--------------------------  CONTENEDOR "MAIN"   --------------------------*/
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+}
+h1{
+    font-size: 3em ;
+}
+h1 span{
+    color: #4686d0;
+}
+img{
+    width: 30vw;
+    height: auto;
+    border: 7px solid #4686d0;
+    border-radius: 20px;
+}
+/*BOTON DESCARGA CV*/
+.botoncv{
+    padding: 10px 20px;
+    background-color: #4686d0;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #FFFF;
+}
+/*--------------------------  CONTENEDOR "SOBRE MI"   --------------------------*/
+.sobremi {
+    margin: 0 auto;
+    width: 100vw;
+    height: 40vh;
+    background-color: #203d89;
+}
+.mi{
+    width: 80vw;
+    margin: auto;
+    color: #FFFF;
+    font-family: 'PT Sans', sans-serif;
+}
+.mi h2{
+    color: #FFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 20px;
+}
+/*--------------------------  CONTENEDOR "CONTACTO"   --------------------------*/
+/* Footer */
+
+footer {
+    background: #203d89;
+    height: auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.titulo-footer{
+    color: #FFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"] {
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 16px;
+    border-top: 5px solid rgba(37, 37, 33, .7);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 33, .7);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: rgba(37, 37, 33, .7);
+    width: 96px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="mi-script.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <nav class="menuPrincipal">
+                <div class="logo">
+                    <h2>Jacob<span>Douglas</span></h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="#sobremi">Sobre Mi</a></li>
+                    <li><a href="#"onclick="mostrarAlerta()">Trabajos Realizados</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <div class="principal">
+                <h1>Soy <span>Jacob </span>Douglas</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nesciunt aspernatur sint eius aliquam, quasi dolores minima modi sed quaerat commodi dicta harum sunt voluptatem debitis totam a! Minus, saepe!</p>
+                <a href="#">
+                    <button class="botoncv" onclick="descargarPDF()">Descargar mi CV</button>
+                </a>
+            </div>
+            <img src="img/perfil.jpg" alt="Foto Perfil Lynn Berry">
+        </div>
+    </div>
+    <a name="sobremi"></a>
+    <div class="sobremi">
+        <div class="mi">
+            <h2>Sobre Mi</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nesciunt aspernatur sint eius aliquam, quasi dolores minima modi sed quaerat commodi dicta harum sunt voluptatem debitis totam a! Minus, saepe!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis ea natus asperiores sunt quas molestias iusto error sed eligendi, libero, voluptates consequuntur maxime quibusdam vitae earum repellendus sit voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus, unde laborum temporibus voluptatum facilis, eum omnis esse explicabo aspernatur inventore, eveniet accusantium nobis minus fugiat quasi error autem repellat.</p>
+        </div>
+    </div>
+</body>
+<!--Contactos-->
+<footer>
+    <a name="contacto"></a>
+    <div class="contenedor">
+        <h2 class="titulo-footer">Contactame</h2>
+        <!--Formulario-->
+        <form action="https://formspree.io/f/xgebzwaa" method="POST">
+            <input type="text" name="name" id="" placeholder="Nombre">
+            <input type="email" name="email" id="" placeholder="Email">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        <!--Fin del formulario-->
+    </div>
+</footer>
+<!--Fin de Contactos-->
+
+</html>
